@@ -1549,7 +1549,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff5b0a;
+  background: #8affad;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2519,4 +2519,50 @@ body {
   .post-body {
     text-align: justify;
   }
+}
+.sidebar .nowTime {
+  width: 24px;
+  height: 36px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.sidebar .nowTime:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 18px;
+  background-color: #f1f9fc;
+  opacity: 0.5;
+  z-index: -1;
+}
+.sidebar .time {
+  width: 24px;
+  height: 360px;
+  margin: 0;
+  padding: 0;
+}
+.sidebar .time li {
+  display: block;
+  width: 24px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #d5d9dc;
+  font-size: 24px;
+  color: #999;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "΢���ź�", tahoma, arial, simsun, "����";
+}
+.sidebar .colon {
+  width: 12px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  float: left;
+}
+.sidebar .width38 {
+  width: 38px;
 }

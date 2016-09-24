@@ -1,0 +1,624 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="note," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="第一次写，很紧张…
+1、arguments.callee &amp;#160; &amp;#160; &amp;#160; &amp;#160;返回当前正在执行的function对象。在函数内部有两个特殊的对象：arguments和this，其中arguments是一个数组类对象，包含传入函数的所有参数；而this则表示的是函数在执行时所处的作用域。callee是arguments对象的一个属性，指向的就是拥有这个argumen">
+<meta property="og:type" content="article">
+<meta property="og:title" content="work note">
+<meta property="og:url" content="http://yoursite.com/2016/09/14/work-note/index.html">
+<meta property="og:site_name" content="TLH'Blog">
+<meta property="og:description" content="第一次写，很紧张…
+1、arguments.callee &amp;#160; &amp;#160; &amp;#160; &amp;#160;返回当前正在执行的function对象。在函数内部有两个特殊的对象：arguments和this，其中arguments是一个数组类对象，包含传入函数的所有参数；而this则表示的是函数在执行时所处的作用域。callee是arguments对象的一个属性，指向的就是拥有这个argumen">
+<meta property="og:image" content="http://yoursite.com/images/ie_hack.png">
+<meta property="og:image" content="http://yoursite.com/images/谁在上网-黑边框.gif">
+<meta property="og:updated_time" content="2016-09-21T14:26:28.965Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="work note">
+<meta name="twitter:description" content="第一次写，很紧张…
+1、arguments.callee &amp;#160; &amp;#160; &amp;#160; &amp;#160;返回当前正在执行的function对象。在函数内部有两个特殊的对象：arguments和this，其中arguments是一个数组类对象，包含传入函数的所有参数；而this则表示的是函数在执行时所处的作用域。callee是arguments对象的一个属性，指向的就是拥有这个argumen">
+<meta name="twitter:image" content="http://yoursite.com/images/ie_hack.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/09/14/work-note/"/>
+
+  <title> work note | TLH'Blog </title>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">TLH'Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                work note
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-14T10:34:46+08:00" content="2016-09-14">
+              2016-09-14
+            </time>
+          </span>
+
+          
+
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>第一次写，很紧张…</p>
+<h5 id="1、arguments-callee"><a href="#1、arguments-callee" class="headerlink" title="1、arguments.callee"></a>1、arguments.callee</h5><p> &#160; &#160; &#160; &#160;返回当前正在执行的function对象。在函数内部有两个特殊的对象：arguments和this，其中arguments是一个数组类对象，包含传入函数的所有参数；而this则表示的是函数在执行时所处的作用域。callee是arguments对象的一个属性，指向的就是拥有这个arguments的函数。</p>
+<p>为什么要记这个，因为在很久很久以前我第一次看到这货时，我竟然是懵逼的…<br>常使用场景：在定时器内调用自身或函数内部递归调用自身<br>注意事项：严格模式下(“user strict”)不能使用</p>
+<a id="more"></a>
+<h5 id="2、css处理文本超过div宽度自动换行"><a href="#2、css处理文本超过div宽度自动换行" class="headerlink" title="2、css处理文本超过div宽度自动换行"></a>2、css处理文本超过div宽度自动换行</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">word-wrap: break-word（会对长单词另起一行）</div><div class="line">word-break: break-all（强制断句不换行）</div></pre></td></tr></table></figure>
+<h5 id="3、阻止事件捕获-冒泡"><a href="#3、阻止事件捕获-冒泡" class="headerlink" title="3、阻止事件捕获/冒泡"></a>3、阻止事件捕获/冒泡</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$(&quot;#div&quot;).on(&quot;touchmove&quot;,function(event)&#123;</div><div class="line">    var e=window.event||event;</div><div class="line">if(e.stopPropagation)&#123;</div><div class="line">    e.stopPropagation();</div><div class="line">&#125;else&#123;</div><div class="line">    window.event.cancelBubble=true;</div><div class="line">	&#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>之前遇到一个问题，手机页面里有一个div，div的超出内容是scroll的，当滚动div的内容不想页面跟随滚动，后面仔细一想其实就是阻止事件捕获，以上是兼容写法。</p>
+<h5 id="4、节流两种方式简单实现"><a href="#4、节流两种方式简单实现" class="headerlink" title="4、节流两种方式简单实现"></a>4、节流两种方式简单实现</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">var  debounce=function (action, idle) &#123;//在idle时间内只执行action一次</div><div class="line">    var i = null;</div><div class="line">    return function () &#123;</div><div class="line">        clearTimeout(i);</div><div class="line">        i = setTimeout(function () &#123;</div><div class="line">            action.apply(this, arguments);</div><div class="line">        &#125;, idle)</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line">var  throttle= function(action, delay)&#123;//每delay时间执行action一次</div><div class="line">    var last = 0;</div><div class="line">    return function()&#123;</div><div class="line">        var curr = +new Date();</div><div class="line">        if (curr - last &gt; delay)&#123;</div><div class="line">            action.apply(this, arguments);</div><div class="line">            last = curr;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<h5 id="5、网站整体变成灰白色"><a href="#5、网站整体变成灰白色" class="headerlink" title="5、网站整体变成灰白色"></a>5、网站整体变成灰白色</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;html style=&quot;filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkitfiltegrayscale(100%);&quot;/&gt;</div></pre></td></tr></table></figure>
+<p>这段代码的使用场景我想不言而喻。</p>
+<h5 id="6、网页禁止右键："><a href="#6、网页禁止右键：" class="headerlink" title="6、网页禁止右键："></a>6、网页禁止右键：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">oncontextmenu=&quot;return false;&quot;</div><div class="line">document.oncontextmenu=function(a)&#123;return !1&#125;</div></pre></td></tr></table></figure>
+<p>事件显示按了哪个键：event.which</p>
+<h5 id="7、DOM文档加载顺序"><a href="#7、DOM文档加载顺序" class="headerlink" title="7、DOM文档加载顺序"></a>7、DOM文档加载顺序</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">* 解析HTML结构。</div><div class="line">* 加载外部脚本和样式表文件。</div><div class="line">* 解析并执行脚本代码。</div><div class="line">* 构造HTML DOM模型。//ready</div><div class="line">* 加载图片等外部文件。</div><div class="line">* 页面加载完毕。//load</div></pre></td></tr></table></figure>
+<h5 id="8、BFC（清除浮动）"><a href="#8、BFC（清除浮动）" class="headerlink" title="8、BFC（清除浮动）"></a>8、BFC（清除浮动）</h5><p>如果要把BFC(块级格式化上下文)讲清楚，恐怕得单独写一章，我还不一定说得清楚，而且网上好的文章有很多，此处只记录其中的一种作用-清除浮动，也是我们项目中所用的比较兼容的写法。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">.clearfix:before,</div><div class="line">.clearfix:after &#123; /*直接copy的项目中的源码，好像只写after就行了吧*/</div><div class="line">    content: &quot; &quot;;</div><div class="line">    display: table;</div><div class="line">&#125;</div><div class="line">.clearfix:after &#123;</div><div class="line">    clear: both;</div><div class="line">&#125;</div><div class="line">.clearfix &#123;</div><div class="line">    *zoom: 1;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h5 id="9、ie各个版本hack"><a href="#9、ie各个版本hack" class="headerlink" title="9、ie各个版本hack"></a>9、ie各个版本hack</h5><p><img src="/images/ie_hack.png" alt="ie 各个版本hack"><br>兼容IE版本的css写法差不多就如上面所示，但曾经在项目中也遇到过坑，大意是给一个div加上box-shadow，IE则是用filter模拟生成，代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.div&#123;</div><div class="line">-moz-box-shadow: 0 0 8px rgba(0,0,0,0.3);</div><div class="line">-webkit-box-shadow: 0 0 8px rgba(0,0,0,0.3);</div><div class="line">box-shadow: 0 0 8px rgba(0,0,0,0.3);</div><div class="line">filter:progid:DXImageTransform.Microsoft.Shadow(color=#dbdbdb,direction=0,strength=5) progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,direction=90,strength=5) progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,direction=180,strength=4) progid:DXImageTransform.Microsoft.Shadow(color=#d2d2d2,direction=270,strength=3); </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>本来效果是可以的，但在IE9下切换却出现了如下的黑框：<br><img src="/images/谁在上网-黑边框.gif" alt="谁在上网-黑边框"><br>原因大概就是IE9本身已经支持了box-shadow，而再加上filter的属性就出现了这种情况，解决的办法也很简单，只让IE7 8识别filter滤镜就好了。但对比上面的hack，发现并没有只有让IE8及其以下识别的写法，我的解决方法是这样的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;!--[if lte IE 8]&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.div&#123;</div><div class="line">filter:progid:DXImageTransform.Microsoft.Shadow(color=#dbdbdb,direction=0,strength=5) progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,direction=90,strength=5) progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,direction=180,strength=4) progid:DXImageTransform.Microsoft.Shadow(color=#d2d2d2,direction=270,strength=3); </div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div><div class="line">&lt;![endif]--&gt;</div></pre></td></tr></table></figure></p>
+<h5 id="10、js各种数据类型比较"><a href="#10、js各种数据类型比较" class="headerlink" title="10、js各种数据类型比较"></a>10、js各种数据类型比较</h5><ul>
+<li>如果比较的两者中有布尔值(Boolean)，会把 Boolean 先转换为对应的 Number，即 0 和 1，然后进行比较。</li>
+<li>如果比较的双方中有一方为 Number，一方为 String时，会把 String 通过 Number() 方法转换为数字，然后进行比较。</li>
+<li>如果比较的双方中有一方为 Boolean，一方为 String时，则会将空字符串””转换为 false，除此外的一切字符串转换为 true，然后进行比较。</li>
+<li>如果比较的双方中有一方为 Number，一方为Object时，则会调用 valueOf 方法将Object转换为数字，然后进行比较。//这一条不是太理解</li>
+</ul>
+<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><p>&#160; &#160; &#160; &#160;在写的时候，内心有很多独白，后面又忍住删了，既然是笔记就要显得专业些，口水话的内容等有时间就另起灶炉水个够。<br>&#160; &#160; &#160; &#160;以上内容属个人笔记，如若有误也没法联系，后面看需添加评论模块吧。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/note/" rel="tag">#note</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/08/first-post/" rel="next" title="my new post">
+                <i class="fa fa-chevron-left"></i> my new post
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/09/18/TCP三次握手/" rel="prev" title="TCP三次握手">
+                TCP三次握手 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="XHu_AIe" />
+          <p class="site-author-name" itemprop="name">XHu_AIe</p>
+          <p class="site-description motion-element" itemprop="description">今天，让你难过的事情，有一天，你一定会笑着说出来。</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1、arguments-callee"><span class="nav-number">1.</span> <span class="nav-text">1、arguments.callee</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、css处理文本超过div宽度自动换行"><span class="nav-number">2.</span> <span class="nav-text">2、css处理文本超过div宽度自动换行</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3、阻止事件捕获-冒泡"><span class="nav-number">3.</span> <span class="nav-text">3、阻止事件捕获/冒泡</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4、节流两种方式简单实现"><span class="nav-number">4.</span> <span class="nav-text">4、节流两种方式简单实现</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5、网站整体变成灰白色"><span class="nav-number">5.</span> <span class="nav-text">5、网站整体变成灰白色</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6、网页禁止右键："><span class="nav-number">6.</span> <span class="nav-text">6、网页禁止右键：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7、DOM文档加载顺序"><span class="nav-number">7.</span> <span class="nav-text">7、DOM文档加载顺序</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#8、BFC（清除浮动）"><span class="nav-number">8.</span> <span class="nav-text">8、BFC（清除浮动）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9、ie各个版本hack"><span class="nav-number">9.</span> <span class="nav-text">9、ie各个版本hack</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#10、js各种数据类型比较"><span class="nav-number">10.</span> <span class="nav-text">10、js各种数据类型比较</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#总结"><span class="nav-number">11.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+<aside class="sidebar" style="display: block;padding: 10px 10px 10px 35px;margin-top:10px;width:195px">
+    <div class="nowTime"></div>
+    <div class="nowTime width26"></div>
+    <div class="colon">:</div>
+    <div class="nowTime"></div>
+    <div class="nowTime width26"></div>
+    <div class="colon">:</div>
+    <div class="nowTime"></div>
+    <div class="nowTime width26"></div>
+</aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">XHu_AIe</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+<span id="busuanzi_container_site_pv">
+    Total visited <span id="busuanzi_value_site_pv"></span> times.
+</span>
+<!--
+<span id="busuanzi_container_site_uv">
+  ��վ�ÿ���<span id="busuanzi_value_site_uv"></span>�˴�
+</span>
+-->
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/time.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
