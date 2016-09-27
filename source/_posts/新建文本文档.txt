@@ -1,0 +1,1 @@
+屏蔽网页广告：display:none => delete =>adblock
