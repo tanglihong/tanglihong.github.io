@@ -24,7 +24,7 @@ after_script:
 
 branches:
   only:
-    - master
+    - raw
 env:
  global:
    - GH_REF: github.com/tanglihong/tanglihong.github.io.git
