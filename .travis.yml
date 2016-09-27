@@ -11,9 +11,9 @@ install:
 
 script:
   - hexo clean
-- hexo g
-- hexo g
-- hexo d
+  - hexo g
+  - hexo g
+  - hexo d
 
 after_script:
   - cd ./public
