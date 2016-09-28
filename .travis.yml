@@ -15,7 +15,9 @@ install:
  # - npm install -g gulp
 
 script:
-  - hexo clean && hexo g -d
+  - hexo c
+  - hexo g
+  - hexo d
 
 after_script:
   - cd ./public
