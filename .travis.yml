@@ -15,7 +15,7 @@ install:
  # - npm install -g gulp
 
 script:
-  - hexo c
+  - npm install hexo-deployer-git --save
   - hexo g
   - hexo d
 
