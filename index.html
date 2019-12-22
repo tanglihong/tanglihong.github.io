@@ -239,107 +239,6 @@
             
               
                 
-                <a class="post-title-link" href="/2016/09/20/阅读笔记/" itemprop="url">
-                  阅读笔记
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-20T14:48:03+08:00" content="2016-09-20">
-              2016-09-20
-            </time>
-          </span>
-
-          
-
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h5 id="2016-10-15"><a href="#2016-10-15" class="headerlink" title="2016/10/15"></a>2016/10/15</h5><p>1、行内元素：会在水平方向排列，不能包含块级元素，设置width无效，height无效(可以设置line-height)，margin上下无效，padding上下无效。<br>块级元素：各占据一行，垂直方向排列。从新行开始结束接着一个断行。<br>2、行内元素兼容使用(IE8以下)：display:inline-block;<em>display:inline;</em>zoom:1;</p>
-<h5 id="2016-10-8"><a href="#2016-10-8" class="headerlink" title="2016/10/8"></a>2016/10/8</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">//判断是否有requestAnimationFrame(cancelAnimationFrame)方法，如果有则使用，没有则大约一秒60帧(大部分浏览器的显示频率是16.7ms)</div><div class="line">window.requestAnimationFrame =</div><div class="line">        window.requestAnimationFrame ||</div><div class="line">        window.webkitRequestAnimationFrame ||</div><div class="line">        window.mozRequestAnimationFrame ||</div><div class="line">        window.oRequestAnimationFrame ||</div><div class="line">        window.msRequestAnimationFrame ||</div><div class="line">        function(callback) &#123;</div><div class="line">            window.setTimeout(callback, 1e3 / 60);</div><div class="line">        &#125;;</div></pre></td></tr></table></figure>
-<p>requestAnimationFrame的用法与setTimeout差不多，与之不同的是requestAnimationFrame不是自己指定回调函数运行的时间，而是跟着浏览器内建的刷新频率来执行回调</p>
-<h5 id="2016-9-27"><a href="#2016-9-27" class="headerlink" title="2016/9/27"></a>2016/9/27</h5><p>onbeforeunload 事件在即将离开当前页面（刷新或关闭）时触发。<br>该事件可用于弹出对话框，提示用户是继续浏览页面还是离开当前页面。</p>
-<p>另外：<br>– 页面加载时只执行onload<br>– 页面关闭时先执行onbeforeunload，最后onunload<br>– 页面刷新时先执行onbeforeunload，然后onunload，最后onload。</p>
-<h5 id="2016-9-23"><a href="#2016-9-23" class="headerlink" title="2016/9/23"></a>2016/9/23</h5><p>其实很多时候看起来遥不可及的目标并没有那么远，很多次我们都是被自己的幻想和恐惧吓住了，甚至连第一步都没有敢迈出去。</p>
-<h5 id="2016-9-20"><a href="#2016-9-20" class="headerlink" title="2016/9/20"></a>2016/9/20</h5><p>DOM事件标准的三个阶段：<br>    （1）事件捕获阶段<br>    （2）处于事件目标阶段<br>    （3）事件冒泡阶段<br>事件处理程序（事件侦听器）：响应某个事件的函数。<br>在HTML中直接指定事件的两个缺点：a、触发相应事件时事件处理程序可能尚不具备执行条件b、HTML和js代码高度耦合。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
                 <a class="post-title-link" href="/2016/09/01/hello-world/" itemprop="url">
                   Hello World
                 </a>
@@ -463,20 +362,13 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           
 
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
           
 
         </nav>
