@@ -14,7 +14,7 @@
 	<script type="text/javascript" src="js/jscex-async-powerpack.min.js"></script>
 	<script type="text/javascript" src="js/functions.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/love.js" charset="utf-8"></script>
-	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
 	<style type="text/css">
 		/*.STYLE1 {
 			color: #666666;
@@ -223,13 +223,20 @@
 				function audioAutoPlay() {
 					var audio = document.getElementById('audio');
 						audio.play();
-					document.addEventListener("WeixinJSBridgeReady", function () {
-						audio.play();
-					}, false);
+						document.addEventListener("WeixinJSBridgeReady", function () {
+							audio.play();
+						}, false);
 				}
 				audioAutoPlay();
 			});
 			document.addEventListener('click', function () {
+				function audioAutoPlay() {
+					var audio = document.getElementById('audio');
+						audio.play();
+				}
+				audioAutoPlay();
+			});
+			document.addEventListener('touchstart', function () {
 				function audioAutoPlay() {
 					var audio = document.getElementById('audio');
 						audio.play();
